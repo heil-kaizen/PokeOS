@@ -192,6 +192,22 @@ export default function App() {
         </div>
       </div>
 
+      {/* Desktop GIFs Layer */}
+      <div className="absolute bottom-9 left-1/2 -translate-x-1/2 flex items-end justify-center gap-8 z-0 pointer-events-none">
+        <img 
+          src="https://raw.githubusercontent.com/heil-kaizen/PokeOS/main/funny.gif" 
+          alt="Walking Pokemon" 
+          className="h-16 object-contain pointer-events-auto hover:scale-110 transition-transform" 
+          style={{ imageRendering: 'pixelated', filter: 'drop-shadow(2px 2px 0px rgba(0,0,0,0.3))' }}
+        />
+        <img 
+          src="https://raw.githubusercontent.com/heil-kaizen/PokeOS/main/assets/Pokemon%20GIF/darumaka.gif" 
+          alt="Darumaka" 
+          className="h-12 object-contain pointer-events-auto hover:scale-110 transition-transform" 
+          style={{ imageRendering: 'pixelated', filter: 'drop-shadow(2px 2px 0px rgba(0,0,0,0.3))' }}
+        />
+      </div>
+
       {/* Render Windows */}
       {windows.map(win => (
         <div 
