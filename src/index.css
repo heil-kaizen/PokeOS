@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-xp: Tahoma, "Noto Sans", sans-serif;
+  --font-pixel: "Pixelify Sans", sans-serif;
+}
+
+@layer utilities {
+  .xp-window-bg {
+    background: linear-gradient(to right, #0058e6, #257cf5, #0058e6);
+  }
+  .xp-window-bg-inactive {
+    background: linear-gradient(to right, #7a96df, #6885d5, #7a96df);
+  }
+  .xp-taskbar-bg {
+    background: linear-gradient(to bottom, #245edb, #3d85fd, #245edb);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .xp-start-btn {
+    background: linear-gradient(to bottom, #3c813f, #2d612f);
+    border-right: 2px solid #1e4120;
+    box-shadow: inset -1px 0 4px rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .xp-start-btn:hover {
+    background: linear-gradient(to bottom, #469a4a, #3c813f);
+  }
+  .xp-start-btn:active {
+    background: linear-gradient(to bottom, #2d612f, #1e4120);
+  }
+  .xp-border {
+    border: 3px solid #0054e3;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  .xp-close-btn {
+    background: #e32219;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.25rem;
+  }
+  .xp-close-btn:hover {
+    background: #dc2626;
+  }
+  .xp-close-btn:active {
+    background: #991b1b;
+  }
+  .xp-min-max-btn {
+    background: #3c813f;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.25rem;
+  }
+  .xp-min-max-btn:hover {
+    background: #16a34a;
+  }
+  .xp-min-max-btn:active {
+    background: #15803d;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Tahoma, "Noto Sans", sans-serif;
+  user-select: none;
+  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 34 28, auto;
+}
+
+button, a, .cursor-pointer {
+  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 34 28, pointer !important;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background-color: #ece9d8;
+  border-left: 1px solid #716f64;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9c7ba;
+  border: 1px solid #ece9d8;
+  border-right-color: #716f64;
+  border-bottom-color: #716f64;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b0ada0;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #ece9d8;
+  border: 1px solid #ece9d8;
+  border-right-color: #716f64;
+  border-bottom-color: #716f64;
+  height: 16px;
+  width: 16px;
+}
