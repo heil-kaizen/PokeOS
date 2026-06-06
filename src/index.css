@@ -66,12 +66,21 @@ html, body, #root {
   overflow: hidden;
   font-family: Tahoma, "Noto Sans", sans-serif;
   user-select: none;
-  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 34 28, auto;
 }
 
-button, a, .cursor-pointer {
-  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 34 28, pointer !important;
+html, body, #root, * {
+  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 0 0, auto !important;
 }
+
+button, a, .cursor-pointer, [role="button"],
+button *, a *, .cursor-pointer *, [role="button"] * {
+  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 0 0, pointer !important;
+}
+
+.cursor-grab { cursor: grab !important; }
+.cursor-grabbing { cursor: grabbing !important; }
+.cursor-text, input, textarea { cursor: text !important; }
+.cursor-crosshair { cursor: crosshair !important; }
 
 ::-webkit-scrollbar {
   width: 16px;
