@@ -78,6 +78,22 @@ export const StartMenu: React.FC<StartMenuProps> = ({ isOpen, onAppClick, onClos
             </div>
           </button>
 
+          <button 
+            className="flex items-center gap-3 py-2 px-2 hover:bg-[#3b82f6] hover:text-white rounded-[3px] text-left group"
+            onClick={() => {
+              onAppClick({ id: 'chess', title: 'Pokémon Chess', component: 'Chess', icon: 'https://raw.githubusercontent.com/heil-kaizen/PokeOS/main/assets/PokemonChess.webp', width: 360, height: 460 });
+              onClose();
+            }}
+          >
+            <div className="w-[32px] h-[32px] flex items-center justify-center">
+              <img src="https://raw.githubusercontent.com/heil-kaizen/PokeOS/main/assets/PokemonChess.webp" className="w-[28px] h-[28px] drop-shadow-sm group-hover:drop-shadow-none" style={{ imageRendering: 'pixelated' }} alt="Chess" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-[12px] font-bold text-[#333] group-hover:text-white">Chess</span>
+              <span className="text-[10px] text-gray-500 group-hover:text-white/80">Board Game</span>
+            </div>
+          </button>
+
           <div className="my-1 border-t border-[#dcdcdc] mx-2" />
 
           <button 
