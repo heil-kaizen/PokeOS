@@ -7,6 +7,7 @@ import { PokedexApp } from './components/poke-xp/apps/Pokedex';
 import { PaintApp } from './components/poke-xp/apps/Paint';
 import { PCBoxApp } from './components/poke-xp/apps/PCBox';
 import { ClockApp } from './components/poke-xp/apps/Clock';
+import { ChessGame } from './components/poke-xp/apps/ChessGame';
 import { AppWindow } from './types';
 import { useXPSounds } from './hooks/useXPSounds';
 
@@ -99,6 +100,7 @@ export default function App() {
       case 'PCBox': return <PCBoxApp />;
       case 'Paint': return <PaintApp />;
       case 'Clock': return <ClockApp />;
+      case 'Chess': return <ChessGame />;
       default: return <div className="p-4">Unknown Application</div>;
     }
   };
@@ -182,6 +184,11 @@ export default function App() {
           icon="https://raw.githubusercontent.com/heil-kaizen/PokeOS/main/assets/paint.webp" 
           title="Paint" 
           onDoubleClick={() => handleOpenApp({ id: 'paint', title: 'Paint', component: 'Paint', icon: 'https://raw.githubusercontent.com/heil-kaizen/PokeOS/main/assets/paint.webp' })} 
+        />
+        <DesktopIcon 
+          icon="https://raw.githubusercontent.com/heil-kaizen/PokeOS/main/assets/PokemonChess.webp" 
+          title="Chess" 
+          onDoubleClick={() => handleOpenApp({ id: 'chess', title: 'Pokémon Chess', component: 'Chess', icon: 'https://raw.githubusercontent.com/heil-kaizen/PokeOS/main/assets/PokemonChess.webp', width: 360, height: 460 })} 
         />
       </div>
 
