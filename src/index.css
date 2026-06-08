@@ -69,11 +69,11 @@ html, body, #root {
 }
 
 body, body * {
-  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 0 0, auto !important;
+  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 27 38, auto !important;
 }
 
 button, button *, a, a *, .cursor-pointer, .cursor-pointer *, [role="button"], [role="button"] * {
-  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 0 0, pointer !important;
+  cursor: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25.png') 27 38, pointer !important;
 }
 
 .cursor-grab, .cursor-grab * { cursor: grab !important; }
